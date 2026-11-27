@@ -53,7 +53,8 @@ def build_youtube_agent():
         markdown=True,
     )
 
-build_youtube_agent().print_response(
-     "Analyze this video: https://www.youtube.com/watch?v=JkaxUblCGz0",
-     stream=True,
- )
+if __name__ == "__main__":
+    build_youtube_agent().print_response(
+        "Analyze this video: https://www.youtube.com/watch?v=JkaxUblCGz0",
+        stream=True,
+    )
